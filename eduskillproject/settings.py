@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-z2kig39sr7ci7uk-)#!_51w-3l(d4pjdi7*i9^%n=2%wok59jt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ec2-15-206-149-14.ap-south-1.compute.amazonaws.com","eduskilling.com","www.eduskilling.com","localhost"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -57,8 +57,7 @@ ROOT_URLCONF = 'eduskillproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,10 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'eduskill_db',
-        'USER':'root',
-        'PASSWORD':'edu@7yd76780ve*2&3x90ad@2021',
-        'HOST':'localhost',
-        'PORT':'3306'
+        'USER': 'root',
+        'PASSWORD': 'edu@7yd76780ve*2&3x90ad@2021',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 
@@ -127,23 +126,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# STATICFILES_DIRS = (
-#     os.path.join(PROJECT_ROOT, 'static'),
-# )
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 # HTTPS Settings
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# SECURE_SSL_REDIRECT = True
 
-#HSTS Settings
+# HSTS Settings
 SECURE_HSTS_SECONDS = 60
 SECURE_HSTS_PRELOAD = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
