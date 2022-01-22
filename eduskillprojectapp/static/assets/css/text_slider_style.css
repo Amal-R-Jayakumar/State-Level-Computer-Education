@@ -1,0 +1,96 @@
+box-sizing: border-box;
+div {
+  display: block;
+}
+
+
+
+.ticker-tape {
+  width: 100%;
+  height: 40px;
+}
+
+@keyframes ticker-tape-scrolling {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -50%
+  }
+}
+
+.ticker-tape {
+  background: #20a296;
+  width: 100%;
+  height: 130px;
+  margin: 0 auto 0;
+}
+
+.ticker-tape-title {
+  float: left;
+  white-space: nowrap;
+  line-height: 2.5rem;
+  padding: 0 1.25rem;
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  color: #fff
+}
+
+.ticker-tape .ticker-tape-scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 48px 48px 48px 0;
+}
+
+.ticker-tape .ticker-tape-collection {
+  display: table-cell;
+  position: relative;
+  animation: ticker-tape-scrolling 40.2s linear infinite running;
+}
+
+
+.ticker-tape .ticker-tape-collection:hover {
+  animation-play-state: paused; 
+}
+
+.ticker-tape .ticker-tape-story {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  text-decoration: :none;
+
+}
+
+.ticker-tape .ticker-tape-story:after {
+  overflow: hidden;
+  text-indent: -9999rem;
+  font-size: 0;
+  line-height: 0;
+  content: "line after";
+  display: inline-block;
+  height: 2rem;
+  margin-bottom: 0.8rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.596);
+  vertical-align: middle;
+  text-align: none;
+}
+
+
+.ticker-tape .ticker-tape-link {
+  display: inline-block;
+  padding: 0 4rem;
+  color: rgb(255, 255, 255);
+  cursor: context-menu;
+}
+
+.ticker-tape .ticker-tape-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ticker-tape-story span {
+  padding-right: 0.3125rem;
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}

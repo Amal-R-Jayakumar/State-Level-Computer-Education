@@ -1,0 +1,143 @@
+.love {
+  -webkit-tap-highlight-color: transparent!important;
+  border-radius: 30px!important;
+   border: 1px solid #dedede!important;
+   position: relative!important;
+   color: #062a35!important;
+   font-size: 15px!important;
+   font-family: "roboto"!important;
+   line-height: 1!important;
+   font-weight: 500!important;
+   height: 58px!important;
+
+   width: 100%!important;
+   font-weight: 400!important;
+
+   background: transparent!important;
+   padding-left: 24px!important;
+   }
+    .select option {
+  background: transparent!important;
+  border: 1px solid #dedede!important;
+  width: 100%!important;
+  height: 180px!important;
+  resize: none!important;
+  padding: 24px!important;
+  display: block!important;
+  font-weight:400!important;
+}
+  .current {
+    position: absolute;
+    top: 20px!important;
+  }
+  .love:hover {
+    border-color: #dbdbdb; }
+  .love:active, .love.open, .love:focus {
+    border-color: #999; }
+  .love:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+        -ms-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 5px; }
+  .love.open:after {
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
+  .love.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    width: 100%;
+    -webkit-transform: scale(1) translateY(0);
+        -ms-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  .love.disabled {
+    border-color: #red;
+    color: #999;
+    pointer-events: none; }
+    .love.disabled:after {
+      border-color: #cccccc; }
+  .love.wide {
+    width: 100%; }
+    .love.wide .list {
+      left: 0 !important;
+      right: 0 !important; }
+  .love.right {
+    float: right; }
+    .love.right .list {
+      left: auto;
+      right: 0; }
+  .love.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px; }
+    .love.small:after {
+      height: 4px;
+      width: 4px; }
+    .love.small .option {
+      line-height: 34px;
+      min-height: 34px; }
+  .love .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+        -ms-transform: scale(0.75) translateY(-21px);
+            transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; }
+    .love .list:hover .option:not(:hover) {
+      background-color: transparent !important; }
+  .love .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    .love .option:hover, .love .option.focus, .love .option.selected.focus {
+      background-color: #f6f6f6; }
+    .love .option.selected {
+      font-weight: bold; }
+    .love .option.disabled {
+      background-color: transparent;
+      color: #999;
+      cursor: default; }
+
+.no-csspointerevents .love .list {
+  display: none; }
+
+.no-csspointerevents .love.open .list {
+  display: block; }

@@ -1,0 +1,966 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RUTRONIX - Online Courses</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/icon/Logo White-svg (1).svg' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/metisMenu.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/floating-wpp.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/text_slider_style.css' %}">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJNQG3V');</script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJNQG3V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="myDiv">
+
+    </div>
+
+
+    <!-- header-start -->
+    <header class="header-transparent">
+        <div id="sticky-header" class="main-menu-area menu-padding pl-55 pr-55">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-7 col-md-6 col-8">
+                        <div class="logo">
+                            <a href="{% url 'index' %}"><img src="{% static 'assets/img/logo/Logo Black.svg' %}" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 d-none d-xl-block">
+                        <div class="main-menu text-left ml-15 text-center">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="{% url 'index' %}">Home</a></li>
+                                    <li><a href="{% url 'index' %}">About Us</a></li>
+                                    <li><a href="#">Eduskilling</a></li>
+                                    <li><a href="#">Courses <i class="far fa-angle-down"></i></a>
+                                        <ul class="sub-menu text-left">
+                                            <li><a href="{% url 'index' %}">Software</a>
+                                            <li><a href="{% url 'index' %}">Hardware</a>
+                                            <li><a href="{% url 'index' %}">Multimedia</a>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Edu Centers <i class="far fa-angle-down"></i></a>
+                                        <!--
+                                        <ul class="sub-menu text-left">
+                                            <li><a href="events.html">Events</a>
+                                            <li><a href="events-details.html">Events Details</a>
+                                        </ul>
+                                        -->
+                                    </li>
+                                   <!-- <li><a href="blog.html">News <i class="far fa-angle-down"></i></a>
+                                        <ul class="sub-menu text-left">
+                                            <li><a href="blog-grid.html">Blog Grid</a></li>
+                                            <li><a href="blog-side.html">Blog Sidebar</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pages <i class="far fa-angle-down"></i></a>
+                                        <ul class="sub-menu text-left">
+                                            <li><a href="about.html">About</a>
+                                            <li><a href="team.html">Team</a>
+                                            <li><a href="team-details.html">Team Details</a>
+                                            <li><a href="faq.html">Faq</a>
+                                        </ul>
+                                    </li>  -->
+                                    <li><a href="{% url 'index' %}">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-5 col-md-6 col-4">
+                        <div class="header-right d-sm-flex align-items-center justify-content-end">
+                            <div class="header-icon d-none d-md-inline-block">
+                               <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>  -->
+                            </div>
+                            <div class="header-sing d-none d-md-inline-block">
+                                <a href="#">Sign up/Log in <i class="far fa-user-circle"></i></a>
+                            </div>
+                            <div class="hamburger-menu menu-bar info-bar">
+                                <a href="#"><i class="fal fa-bars"></i><!--<img src="{% static 'assets/img/icon/bar.png' %}" alt="">--></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-start -->
+    <!-- slide-bar start -->
+    <aside class="slide-bar">
+        <div class="close-mobile-menu">
+            <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+        </div>
+
+        <!-- offset-sidebar start -->
+        <div class="offset-sidebar">
+            <div class="offset-widget offset-logo mb-30">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'assets/img/logo/Logo White.svg' %}" alt="logo">
+                </a>
+            </div>
+            <div class="offset-widget mb-40">
+                <div class="info-widget">
+                    <h4 class="offset-title mb-20">About Us</h4>
+                    <p class="mb-30">
+                        KERALA STATE RUTRONIX was set up by the Govt. of Kerala, in 1990 as the apex body of 18 Rural Women's Electronics Industrial Co-operative Societies in the state.
+                    </p>
+                    <a class="c-btn btn-round-02" href="{% url 'contact' %}">Contact Us</a>
+                </div>
+            </div>
+            <div class="offset-widget mb-30 pr-10">
+                <div class="info-widget info-widget2">
+                    <h4 class="offset-title mb-20">Contact Info</h4>
+                    <p> <i class="fal fa-address-book"></i> Kerala State Rutronix<br>
+                                                            C-11, Padmasree, Elankom Gardens<br>
+                                                            Sasthamanagalam.P.O<br>
+                                                            Thiruvananthapuram-10, Kerala</p>
+                    <p> <i class="fal fa-phone"></i> +91 9072 6454 03 </p>
+                    <p> <i class="fal fa-envelope-open"></i> rutronixeduskilling@gmail.com </p>
+                </div>
+            </div>
+        </div>
+        <!-- offset-sidebar end -->
+
+        <!-- side-mobile-menu start -->
+        <nav class="side-mobile-menu">
+            <ul id="mobile-menu-active">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="#">Eduskilling</a></li>
+                <li class="has-dropdown"><a href="#">Courses</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'software' %}">Software</a>
+                        <li><a href="{% url 'hardware' %}">Hardware</a>
+                        <li><a href="{% url 'multimedia' %}">Multimedia</a>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Edu Centers</a>
+                    <ul class="sub-menu">
+                    <!--
+
+                        <li><a href="events.html">Events List</a></li>
+                        <li><a href="events-details.html">Events Details</a></li>
+
+                        -->
+                    </ul>
+                </li>
+                <!--
+                <li class="has-dropdown"><a href="#">Blogs</a>
+                    <ul class="sub-menu">
+                        <li><a href="blog-grid.html">Blog Grid</a></li>
+                        <li><a href="blog-side.html">Blog Sidebar</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                -->
+                <!--
+                <li class="has-dropdown">
+                    <a href="#">Pages</a>
+                    <ul class="sub-menu">
+                        <li><a href="about.html">About</a>
+                        <li><a href="team.html">Team</a>
+                        <li><a href="team-details.html">Team Details</a>
+                        <li><a href="faq.html">Faq</a>
+                    </ul>
+                </li>
+                -->
+                <li><a href="{% url 'contact' %}">Contacts</a></li>
+            </ul>
+        </nav>
+        <!-- side-mobile-menu end -->
+    </aside>
+    <div class="body-overlay"></div>
+    <!-- slide-bar end -->
+
+    <main>
+
+
+        <!-- course-area-start -->
+        <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12">
+                        <div class="events-details-wrapper pt-170">
+                            <div class="events-contents-02">
+                                <h3>Diploma in System Administrator in Networking</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-8 col-md-12">
+
+                    </div>
+                </div>
+        </div>
+        <section class="course-curriculumn-area pt-30 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12">
+                        <div class="course-left-area">
+                            <div class="improve-skill-area mb-50">
+                                <div class="video-learn-area pos-rel mb-30">
+                                    <div class="skill-thumb pos-rel">
+                                        <img src="{% static 'assets/img/course/c-19.jpg' %}" alt="">
+                                    </div>
+                                    <div class="video-area">
+                                        <a class="popup-video" href="https://www.youtube.com/watch?v=I3xhIyN2rvk"><i
+                                                class="fas fa-play"></i></a>
+                                    </div>
+                                </div>
+                                <!--<div class="review-icon">
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                                </div>
+                                <h3 class="course-title-03 mb-25">How To Improve Wed Design Skills</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                    voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                                    quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                                    tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+                                    minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                                    ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+                                    ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                                    fugiat quo voluptas nulla pariatur</p>-->
+                            </div>
+                           <!-- <div class="curriculumn-area mb-65">
+                                <h3 class="course-title-03 mb-20">Curriculum</h3>
+                                <p class="mb-25">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                    fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                    labore et dolore magnam aliquam</p>
+                                <ul class="curriculumn-list">
+                                    <li><a href="#">Lesson 01 : Introduced About Web Design <span class="f-right"><i
+                                                    class="far fa-play-circle"></i> 05:59 hr</span> </a></li>
+                                    <li><a href="#">Lesson 02 : What Is UX/UI Design ? <span class="f-right"><i
+                                                    class="far fa-play-circle"></i> 05:59 hr</span> </a></li>
+                                    <li><a href="#">Lesson 03 : Why Need UX/UI Role In Web Design ? <span
+                                                class="f-right"><i class="far fa-play-circle"></i> 05:59 hr</span> </a>
+                                    </li>
+                                    <li><a href="#">Lesson 04 : What Is UX Manager ? <span class="f-right"><i
+                                                    class="far fa-play-circle"></i> 05:59 hr</span> </a></li>
+                                    <li><a href="#">Lesson 05 : What’s Your Design Goals? <span class="f-right"><i
+                                                    class="far fa-play-circle"></i> 05:59 hr</span> </a></li>
+                                </ul>
+                            </div> -->
+                            <!--<div class="faq-area mb-60">
+                                <div class="faq-thumbs mb-40">
+                                    <img src="assets/img/course/c-20.jpg" alt="">
+                                </div>
+                                <h3 class="course-title-03 mb-20">Frequently Asked Questions</h3>
+                                <p>Wuisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                                    quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p>
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Best Online Course For Basic Web Design For Beginners
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <div class="card-thumb f-left"><img src="assets/img/course/c-21.jpg"
+                                                            alt=""></div>
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                        accusan mque
+                                                        laud totam rem aperiam, eaque ipsa quae ab illo inventore
+                                                        veritatis etq ectosd beatae vitae dicta sunt explicabo. Nemo
+                                                        enim ipsam voluptatem quiatas sit asperatur aut odit aut fugit
+                                                        sed quia consequuntur magni dolores</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Why We Are The Best Online Courses ?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <div class="card-thumb f-left"><img src="assets/img/course/c-21.jpg"
+                                                            alt=""></div>
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                        accusan mque
+                                                        laud totam rem aperiam, eaque ipsa quae ab illo inventore
+                                                        veritatis etq ectosd beatae vitae dicta sunt explicabo. Nemo
+                                                        enim ipsam voluptatem quiatas sit asperatur aut odit aut fugit
+                                                        sed quia consequuntur magni dolores</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Creating Secure Password Flows With NodeJS And MySQL
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <div class="card-thumb f-left"><img src="assets/img/course/c-21.jpg"
+                                                            alt=""></div>
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                        accusan mque
+                                                        laud totam rem aperiam, eaque ipsa quae ab illo inventore
+                                                        veritatis etq ectosd beatae vitae dicta sunt explicabo. Nemo
+                                                        enim ipsam voluptatem quiatas sit asperatur aut odit aut fugit
+                                                        sed quia consequuntur magni dolores</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    Creating Secure Password Flows With NodeJS And MySQL
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <div class="card-thumb f-left"><img src="assets/img/course/c-21.jpg"
+                                                            alt=""></div>
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                        accusan mque
+                                                        laud totam rem aperiam, eaque ipsa quae ab illo inventore
+                                                        veritatis etq ectosd beatae vitae dicta sunt explicabo. Nemo
+                                                        enim ipsam voluptatem quiatas sit asperatur aut odit aut fugit
+                                                        sed quia consequuntur magni dolores</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--<div class="course-intructor-area">
+                                <h3 class="course-title-03 mb-20">Course Instructors</h3>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="instructors text-center mb-30">
+                                            <div class="instructors-thumb mb-30"><img src="assets/img/team/t-01.png"
+                                                    alt=""></div>
+                                            <div class="instructors-name">
+                                                <h4><a href="team-details.html">Somalia D Silva</a></h4>
+                                                <span>Math Teacher</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="instructors text-center mb-30">
+                                            <div class="instructors-thumb mb-30"><img src="assets/img/team/t-02.png"
+                                                    alt=""></div>
+                                            <div class="instructors-name">
+                                                <h4><a href="team-details.html">David Warner</a></h4>
+                                                <span>Math Teacher</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="instructors text-center mb-30">
+                                            <div class="instructors-thumb mb-30"><img src="assets/img/team/t-03.png"
+                                                    alt=""></div>
+                                            <div class="instructors-name">
+                                                <h4><a href="team-details.html">Zavib Makaullah</a></h4>
+                                                <span>Math Teacher</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="instructors text-center mb-30">
+                                            <div class="instructors-thumb mb-30"><img src="assets/img/team/t-04.png"
+                                                    alt=""></div>
+                                            <div class="instructors-name">
+                                                <h4><a href="team-details.html">Jhonson Maxwell</a></h4>
+                                                <span>Math Teacher</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="course-right-area">
+                            <div class="widget mb-40">
+                                <ul class="widget-course-list">
+                                    <li><a href="#"><i class="far fa-usd-circle"></i> Eligibility<span
+                                                class="f-right">SSLC & Above</span></a></li>
+                                    <li><a href="#"><i class="fal fa-clock"></i> Duration <span class="f-right">6 Months</span></a></li>
+                                    <li><a href="#"><i class="fal fa-book"></i> Registration Fee <span class="f-right">6,550/-</span></a></li>
+                                    <li><a href="#"><i class="fal fa-users"></i> Tuition Fee <span class="f-right">22,000/-</span></a></li>
+                                </ul>
+                                <div class="enroll-btn mb-40 text-center"><a class="c-btn btn-round-02" href="#">Enroll now <i
+                                            class="far fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                            <!--<div class="widget">
+                                <div class="widget-advertisement">
+                                    <img src="assets/img/course/add-01.jpg" alt="">
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- course-area-end -->
+
+               <!-- Text-silder-start -->
+        <section>
+          <div class="ticker-tape">
+          <div class="container">
+            <div class="ticker-tape-scroll">
+              <div class="ticker-tape-collection">
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span style="">NETWORKING FUNDAMENTALS</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>Network architectures</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>Wireless Networking
+              </span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>Network Security</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>MCSA 2016</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>Windows Serve</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>RHCSA 8</span></a></div>
+
+                        <div class="ticker-tape-story"><span class="ticker-tape-link"><span>LINUX</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>ROUTING AND SWITCHING</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>LAN
+              </span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span>WAN</span></a></div>
+                <div class="ticker-tape-story"><span class="ticker-tape-link"><span></span></a></div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </section>
+
+        <!-- Text-silder-end -->
+        <!-- course-area-start -->
+        <section class="course-curriculumn-area pt-130 pb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12">
+                        <div class="course-left-area">
+                            <div class="improve-skill-area mb-50">
+                                <!--<div class="video-learn-area pos-rel mb-30">
+                                    <div class="skill-thumb pos-rel">
+                                        <img src="assets/img/course/c-19.jpg" alt="">
+                                    </div>
+                                    <div class="video-area">
+                                        <a class="popup-video" href="https://www.youtube.com/watch?v=D-goSWGqI2U"><i
+                                                class="fas fa-play"></i></a>
+                                    </div>
+                                </div>
+                                <div class="review-icon">
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                                </div>-->
+                                <h3 class="course-title-03 mb-25">About the Course</h3>
+                                <p>This six-month course is designed for becoming a professional in system administration. It
+                                prepares students to acquire skills in managing Server Operating Systems and Cisco Router
+                                & Switch administration. It covers Networking fundamentals, MCSA 2016, RHCSA 8 and
+                                Cisco Routing & Switching. Entry to this course is open for 10th pass-outs and above or
+                                equivalent qualification from a recognized board of education.
+                                Upon completing this program, students can gain advanced skills that will endeavour them
+                                to find a better career in IT Infrastructure. This can enhance your career as an IT
+                                professional who can handle the most complex of IT processes with various designations
+                                as: IT Infrastructure Administrator, Windows System Administrator, Red Hat Linux System
+                                Administrator, Cisco Network Engineer, Network Administrator, IT Support Engineer, etc.
+                                You’ll learn following modules during the course period:
+
+                                </p>
+                            </div>
+                            <div class="curriculumn-area mb-25">
+                                <h3 class="course-title-03 mb-20">Curriculum</h3>
+                            </div>
+                            <div class="faq-area mb-60">
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Module 1
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <p style="text-transform:uppercase;"> Networking Fundamental</p>
+                                                    <ul class="text-list">
+                                                        <li><a href="#">Networks & services, their types</a></li>
+                                                        <li><a href="#">Network architectures, topology & protocols              </a></li>
+                                                        <li><a href="#">Inter network Connectivity Devices & their subcategories </a></li>
+                                                        <li><a href="#">Wireless Networking                                      </a></li>
+                                                        <li><a href="#">Network Security                                         </a></li>
+                                                        <li><a href="#">Testing and Troubleshooting Networks                     </a></li>
+                                                        <li><a href="#">Network Performance and Monitoring                       </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Module 2
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <p style="text-transform:uppercase;">MCSA 2016</p>
+                                                    <ul class="text-list"><br>
+                                                    <li><a href="#">Installing Windows Server 2016                           </a></li>
+                                                    <li><a href="#">Configuring Local Storage                                </a></li>
+                                                    <li><a href="#">File System Management                                   </a></li>
+                                                    <li><a href="#">Implementing Active Directory                            </a></li>
+                                                    <li><a href="#">Managing Objects in AD DS                                </a></li>
+                                                    <li><a href="#">Implementing DNS                                         </a></li>
+                                                    <li><a href="#">Implementing Group Policy                                </a></li>
+                                                    <li><a href="#">Implementing DHCP                                        </a></li>
+                                                    <li><a href="#">Installing and Configuring Hyper-V and Virtual Machines  </a></li>
+                                                    <li><a href="#">Implementing Windows Deployment                          </a></li>
+                                                    <li><a href="#">Services (WDS)                                           </a></li>
+                                                    <li><a href="#">Implementing Windows Server Update                       </a></li>
+                                                    <li><a href="#">Services (WSUS)                                          </a></li>
+                                                    <li><a href="#">Remote Access in Windows Server 2016                     </a></li>
+                                                    <li><a href="#">Implementing Enterprise Storage Solutions                </a></li>
+                                                    <li><a href="#">Implementing Disaster Recovery                           </a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    Module 3
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <p style="text-transform:uppercase;"> RHCSA 8</p>
+                                                    <ul class="text-list"><br>
+                                                        <li><a href="#">Introduction to Linux                                                           </a></li>
+                                                        <li><a href="#">Accessing the Command Line                                                      </a></li>
+                                                        <li><a href="#">Getting Help in Red Hat Enterprise Linux                                        </a></li>
+                                                        <li><a href="#">Linux File System Operations                                                    </a></li>
+                                                        <li><a href="#">Creating, Viewing and Editing Text Files                                        </a></li>
+                                                        <li><a href="#">Manage Local Linux Users and Groups                                             </a></li>
+                                                        <li><a href="#">Monitoring and Managing Linux Processes                                         </a></li>
+                                                        <li><a href="#">Configure and Secure OpenSSH Service Manage Red Hat Enterprise Linux Networking </a></li>
+                                                        <li><a href="#">Install and Update Software Packages Using Virtualized Systems                  </a></li>
+                                                        <li><a href="#">Analyze and Store Logs Automating                                               </a></li>
+                                                        <li><a href="#">Installation with Kickstart                                                     </a></li>
+                                                        <li><a href="#">Using Regular Expressions with “grep”                                           </a></li>
+                                                        <li><a href="#">Creating & Editing Text Files with “vim”                                        </a></li>
+                                                        <li><a href="#">Scheduling Future Linux Task                                                    </a></li>
+                                                        <li><a href="#">Controlling Access to Files with Access                                         </a></li>
+                                                        <li><a href="#">Control Lists (ACL)                                                             </a></li>
+                                                        <li><a href="#">Managing SELinux Security                                                       </a></li>
+                                                        <li><a href="#">Connecting to Network-Defined Users and Groups                                  </a></li>
+                                                        <li><a href="#">Adding Disks, Partitions, and File Systems to a Linux System                    </a></li>
+                                                        <li><a href="#">Controlling and Troubleshooting the Red Hat Enterprise Linux Boot Process       </a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseFive" aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    Module 4
+
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="card-content fix">
+                                                    <p style="text-transform:uppercase;">CISCO CERTIFIED NETWORK ASSOCIATE ROUTING AND SWITCHING</p>
+                                                    <ul class="text-list"><br>
+                                                        <li><a href="#">Networking Fundamentals     </a></li>
+
+                                                        <li><a href="#">LAN Switching Technologies  </a></li>
+
+                                                        <li><a href="#">Routing Technologies        </a></li>
+
+                                                        <li><a href="#">WAN Technologies            </a></li>
+
+                                                        <li><a href="#">Infrastructure Services     </a></li>
+
+                                                        <li><a href="#">Infrastructure Security     </a></li>
+
+                                                        <li><a href="#">Infrastructure Management   </a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="course-right-area">
+                         <div class="subscribe-area white-bg">
+                            <h3>Get In Touch</h3>
+                            <form class="subscribe" action="#">
+                                <div class="input-text">
+                                    <input class="form-control" style="font-weight:400;" type="text" placeholder="Your Name">
+                                </div>
+                                <div class="input-text">
+                                    <input class="form-control" style="font-weight:400;" type="text" placeholder="Your Email">
+                                </div>
+                                <div class="input-text">
+                                    <input class="form-control" style="font-weight:400;" type="tel" name="mobile" placeholder="Mobile" required>
+                                </div>
+                                <div class="input-text">
+                                    <textarea name="" style="font-weight:400;" id="" cols="30" rows="10" placeholder="Write Message"></textarea>
+                                </div>
+                                <div class="lg-btn">
+                                    <a class="c-btn" href="#">send message <i
+                                        class="far fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </form>
+                          </div>
+                            <!--<div class="authors-03 text-center white-bg mb-30">
+                            <div class="authors-03-thumb mb-30">
+                                <img src="assets/img/faq/3173494.jpg" style="max-width:300px;" alt="">
+                            </div>
+                            <div class="authors-03-text">
+                                <span>Terms and conditions</span>
+                                <p>Registration Fee is to be paid by the student directly through an internet-based payment portal</p>
+                                <p>Special Category  –  Women, Spouse/children of defense or police personnel who had laid their life in action, all citizens with more than 50% disability, a person who have received national honors(Civilian/Defense/Police/Sports/Bravery) citizens who had represented India in arts, sports and science domains, and transgender. (Documentary Proof is Required)</p>
+                                <p>Special Category – All courses up to and including six months duration.</p>
+                                <p>Additionally, the examination fee is applicable and to be paid as per norms of Kerala State Rutronix.</p>
+                            </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- course-area-end -->
+
+        <div class="col-xl-12 col-lg-12 col-md-12 mb-80">
+            <div class="instructor-button mt-15 text-center">
+                 <div class="enroll-btn mb-40 text-center"><a class="c-btn btn-round-02" href="#">Enroll now <i
+                     class="far fa-long-arrow-alt-right"></i></a>
+                 </div>
+            </div>
+        </div>
+        
+        <!-- form-area start -->
+
+        <div class="col-xl-12 col-lg-12 col-md-12 mb-120 mt-130 ">
+            <div class="container">
+            <div class="row split-form">
+              <img src="{% static 'assets/img/bg/Admission (1).png' %}" />
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 lesson-style form-height border-left turkish-blue" data-background="{% static 'assets/img/bg/fot-01-bg.png' %}">
+                   <h1>Sign up for a <br><span class="free">Free Trial Sessions</span><br>by Online</h1>
+                   <p>Please enter your details to receive detailed information regarding RUTRONIX courses and admission related information, One of our academic/career advisors will be speaking to you shortly.</p>
+                <div class="lg-btn">
+                                    <a class="c-btn" style="padding:0; background:transparent; color:grey; border:none; text-transform:capitalize;" href="{% url 'about' %}">Read more<i
+                                        class="far fa-long-arrow-alt-right"></i></a>
+                                </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 form-height border-right turkish-blue">
+                      <div class="subscribe-area form-girl">
+                      
+                            <form id="submit-form" class="subscribe" action="">
+                                <div class="input-text">
+                                    <input class="form-control" style="border-radius:30px; font-weight:400;" type="text" name="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="input-text">
+                                    <input class="form-control" style="border-radius:30px; font-weight:400;" type="text" name="email" placeholder="E-mail Id" required>
+                                </div>
+                                     <div class="input-text">
+                                    <input class="form-control" style="border-radius:30px; font-weight:400;" type="tel" name="mobile" placeholder="Mobile Number" required>
+                                </div>
+                                
+                                <div class="lg-btn">
+                                    <button type="submit" class="c-btn btn-square-03  form-bg" style="width:100%; font-weight:400; border-radius:30px; background-color:#ea5822; border:0; color:#fff; padding-left:0;" href="#">send request <i
+                                        class="far fa-long-arrow-alt-right"></i></button>
+                                </div>
+                            </form>
+              </div>
+                </div>
+            </div>    
+            </div>
+        </div>
+
+        <!-- form-area end -->
+
+                <div class="col-xl-12 col-lg-12 col-md-12 mb-80">
+            <div class="instructor-button mt-15 text-center">
+                 <div class="authors-03 text-center white-bg mb-30">
+                            <!--<div class="authors-03-thumb mb-30">
+                                <img src="assets/img/faq/3173494.jpg" style="max-width:300px;" alt="">
+                            </div>-->
+                            <div class="authors-03-text">
+                                <span>Terms and conditions</span>
+                                <p>Registration Fee is to be paid by the student directly through an internet-based payment portal</p>
+                                <p>Special Category  –  Women, Spouse/children of defense or police personnel who had laid their life in action, all citizens with more than 50% disability, a person who have received national honors(Civilian/Defense/Police/Sports/Bravery) citizens who had represented India in arts, sports and science domains, and transgender. (Documentary Proof is Required)</p>
+                                <p>Special Category – All courses up to and including six months duration.</p>
+                                <p>Additionally, the examination fee is applicable and to be paid as per norms of KERALA STATE RUTRONIX.</p>
+                            </div>
+                            </div>
+            </div>
+        </div>
+        <!-- search-course-area start --> 
+        <section class="search-course-area pt-40 pb-40 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="search-title">
+                            <h3>Find your interest</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="search-area">
+                            <select class="cat-selsct" name="Courses" id="Courses">
+                                <option value="Search Courses">Search Courses</option>
+                                <option value="">Post Graduate Diploma in Computer Applications (PGDCA)</option>
+                                <option value="">Diploma in Computer Application (DCA)</option>
+                                <option value="">Professional Diploma in Desktop Publishing (PDDTP)</option>
+                <option value="">Professional Diploma in Computer Aided Design (PDCAD)</option>
+                                <option value="">Professional Diploma in Computerised Financial Accounting (PDCFA)</option>
+                                <option value="">Professional Diploma in Web Designing (PDWD)</option>
+                <option value="">Diploma in Computer Teachers Training Course (CTTC)</option>
+                                <option value="">Diploma in Office Automation (DOA)</option>
+                                <option value="">Certificate in Word Processing and Data Entry Operator (CWPDE)</option>
+                <option value="">Administrative Office Computing (AOC)</option>
+                                <option value="">Diploma in Hardware and Network Engineering (DHNE)</option>
+                                <option value="">Diploma in Computer Hardware Maintenance (DCHM)</option>
+                <option value="">Diploma in System Administrator in Networking (DSAN)</option>
+                                <option value="">Diploma in 2D Animation Art & Engineering ( D2DAAE )</option>
+                                <option value="">Diploma in 3D Animation and Visual Effects ( D3DAVE )</option>
+                <option value="">Diploma in Multimedia & Web Design ( DMWD ) </option>
+                <option value="">Diploma in Multimedia Application ( DMA )</option>
+                <option value="">Diploma in  Graphic Designing and Advertising ( DGDA )</option>
+                <option value="">Diploma in Architechtural Building Design ( DABD )</option>
+                            </select>
+                            <form class="search-now">
+                                <input type="text" placeholder="search now">
+                                <button type="submit"><i class="far fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- search-course-area end -->
+         
+<!-- footer-area-start -->
+         <footer class="footer-area pt-65 pb-45" data-background="{% static 'assets/img/bg/fot-01-bg.png' %}">
+            <div class="container">
+                <div class="row mb-55 no-gutters align-items-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-12">
+                        <div class="footer-logo">
+                            <a href="{% url 'index' %}"><img src="{% static 'assets/img/logo/Logo White.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-12">
+                        <div class="footer-social-icon text-right pb-70">
+                            <a class="fot-fb active pb-70" href="https://www.facebook.com/rutronixeduskilling"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a class="fot-twitter pb-70" href="https://twitter.com/eduskilling"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a class="fot-google pb-70" href="https://www.youtube.com/channel/UC01J8vMqtyjLCwui8zXv0rQ"><i class="fab fa-youtube"></i> Youtube</a>
+                            <a class="fot-insta pb-70" href="https://www.instagram.com/rutronixeduskilling/"><i class="fab fa-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-8 col-12">
+                        <div class="footer-widget mb-30">
+                            <h4 class="footer-widget-title mb-25">EDU SKILLING PROGRAMS</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">Accounting GST</a></li>
+                                <li><a href="#">Computer Aided Design</a></li>
+                                <li><a href="#">3D Animation & VFX</a></li>
+                                <li><a href="#">PGDCA / DCA / DOA</a></li>
+                                <li><a href="#">Data Entry Operator</a></li>
+                                <li><a href="#">Arch/Building Design</a></li>
+                                <li><a href="#">Teachers Training</a></li>
+                                <li><a href="#">Hardware and Networking</a></li>
+                                <li><a href="#">Graphic & Web Design</a></li>
+                                <li><a href="#">Networking Administrator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 col-md-4 col-12">
+                        <div class="footer-widget widget-center text-center mb-30">
+                            <h4 class="footer-widget-title mb-25">THE PROJECT</h4>
+                            <ul class="footer-list footer-02-list">
+                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                <li><a href="#">Eduskilling</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Edu Centers</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-12">
+                        <div class="footer-widget mb-30">
+                            <h4 class="footer-widget-title mb-25">CONNECT US</h4>
+                            <p class="mb-25">Please enter your Email ID to receive
+								detailed information regarding RUTRONIX
+								courses and admission related information, One
+								of our academic/career advisors will be
+								speaking to you shortly.</p>
+                            <form class="slider-search-form">
+                                <input type="text" placeholder="Enter Your Email">
+                                <button type="submit"><i class="far fa-long-arrow-alt-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area mt-15 text-center pt-20 pb-20">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="copyright-text">
+                                <p><!--Copyright © 2021 <a href="#">Kerala State Rutronix</a> All Rights Reserved. | --> Powered by<img src="{% static 'assets/img/logo/groware LOGO.svg' %}" style="max-width:85px; height:auto; margin-top:-1px" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+    </main>
+
+
+<script type="text/javascript">
+    $('#myDiv').floatingWhatsApp({
+    phone: '919072645403',
+    popupMessage: 'Hello, Welcome to Kerala State Rutronix',
+    showPopup: true,
+    headerTitle:'KERALA STATE RUTRONIX',
+    position:'right'
+});
+</script>
+
+    <!-- JS here -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/floating-wpp.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/metisMenu.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'assets/js/ajax-form.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nice-select.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easypiechart.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>
